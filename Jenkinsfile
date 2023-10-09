@@ -8,8 +8,8 @@ pipeline {
     stages { 
     stage ('GIT'){
     steps {
-        echo "Getting Project from Git";
-        
+        echo "Getting Project from Git"
+        git branch:"master",
         url :"https://github.com/sarraayari/avec-maven.git"
     }
 }
